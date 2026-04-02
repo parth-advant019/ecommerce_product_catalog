@@ -1,3 +1,4 @@
+import SideBar from "@/components/ui/Sidebar";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -27,7 +28,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex overflow-x-hidden bg-[#c9d6e3] transition-colors duration-300">
+        <SideBar />
+        <div className="w-full p-4 md:p-8 ml-0 md:ml-64 pt-16 md:pt-8 overflow-x-hidden">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

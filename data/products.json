@@ -1,0 +1,506 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15",
+    "description": "Latest Apple smartphone",
+    "price": 79999,
+    "image": "/images/electronics/iphone.png",
+    "category": "Electronics",
+    "rating": 4.8,
+    "reviews": 120
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S23",
+    "description": "Flagship Android phone",
+    "price": 69999,
+    "image": "/images/electronics/SamsungGalaxyS23.png",
+    "category": "Electronics",
+    "rating": 4.7,
+    "reviews": 98
+  },
+  {
+    "id": 3,
+    "name": "Dell Laptop",
+    "description": "High performance laptop",
+    "price": 55000,
+    "image": "/images/electronics/DellLaptop.png",
+    "category": "Electronics",
+    "rating": 4.5,
+    "reviews": 65
+  },
+  {
+    "id": 4,
+    "name": "HP Laptop",
+    "description": "Reliable everyday laptop",
+    "price": 48000,
+    "image": "/images/electronics/hp_Laptop.png",
+    "category": "Electronics",
+    "rating": 4.4,
+    "reviews": 58
+  },
+  {
+    "id": 5,
+    "name": "Bluetooth Headphones",
+    "description": "Wireless headphones",
+    "price": 2999,
+    "image": "/images/electronics/BluetoothHeadphones.png",
+    "category": "Electronics",
+    "rating": 4.3,
+    "reviews": 40
+  },
+  {
+    "id": 6,
+    "name": "Smart Watch",
+    "description": "Fitness smartwatch",
+    "price": 4999,
+    "image": "/images/electronics/iphone.png",
+    "category": "Electronics",
+    "rating": 4.4,
+    "reviews": 70
+  },
+  {
+    "id": 7,
+    "name": "Tablet",
+    "description": "Android tablet",
+    "price": 20000,
+    "image": "https://via.placeholder.com/150",
+    "category": "Electronics",
+    "rating": 4.3,
+    "reviews": 35
+  },
+  {
+    "id": 8,
+    "name": "Keyboard",
+    "description": "Mechanical keyboard",
+    "price": 1500,
+    "image": "https://via.placeholder.com/150",
+    "category": "Electronics",
+    "rating": 4.2,
+    "reviews": 30
+  },
+  {
+    "id": 9,
+    "name": "Mouse",
+    "description": "Wireless mouse",
+    "price": 700,
+    "image": "https://via.placeholder.com/150",
+    "category": "Electronics",
+    "rating": 4.1,
+    "reviews": 25
+  },
+  {
+    "id": 10,
+    "name": "Monitor",
+    "description": "24 inch LED monitor",
+    "price": 12000,
+    "image": "https://via.placeholder.com/150",
+    "category": "Electronics",
+    "rating": 4.6,
+    "reviews": 55
+  },
+
+  {
+    "id": 11,
+    "name": "Men T-Shirt",
+    "description": "Cotton t-shirt",
+    "price": 499,
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothing",
+    "rating": 4.2,
+    "reviews": 30
+  },
+  {
+    "id": 12,
+    "name": "Women Dress",
+    "description": "Summer dress",
+    "price": 1299,
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothing",
+    "rating": 4.6,
+    "reviews": 55
+  },
+  {
+    "id": 13,
+    "name": "Jeans",
+    "description": "Slim fit jeans",
+    "price": 1499,
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothing",
+    "rating": 4.3,
+    "reviews": 42
+  },
+  {
+    "id": 14,
+    "name": "Jacket",
+    "description": "Winter jacket",
+    "price": 2499,
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothing",
+    "rating": 4.5,
+    "reviews": 60
+  },
+  {
+    "id": 15,
+    "name": "Sneakers",
+    "description": "Running shoes",
+    "price": 1999,
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothing",
+    "rating": 4.4,
+    "reviews": 48
+  },
+  {
+    "id": 16,
+    "name": "Hoodie",
+    "description": "Casual hoodie",
+    "price": 1299,
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothing",
+    "rating": 4.5,
+    "reviews": 45
+  },
+  {
+    "id": 17,
+    "name": "Cap",
+    "description": "Stylish cap",
+    "price": 299,
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothing",
+    "rating": 4.2,
+    "reviews": 20
+  },
+  {
+    "id": 18,
+    "name": "Socks",
+    "description": "Cotton socks",
+    "price": 199,
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothing",
+    "rating": 4.1,
+    "reviews": 18
+  },
+  {
+    "id": 19,
+    "name": "Kurta",
+    "description": "Traditional wear",
+    "price": 999,
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothing",
+    "rating": 4.6,
+    "reviews": 52
+  },
+  {
+    "id": 20,
+    "name": "Trousers",
+    "description": "Formal trousers",
+    "price": 899,
+    "image": "https://via.placeholder.com/150",
+    "category": "Clothing",
+    "rating": 4.3,
+    "reviews": 35
+  },
+
+  {
+    "id": 21,
+    "name": "Novel",
+    "description": "Fiction novel",
+    "price": 399,
+    "image": "https://via.placeholder.com/150",
+    "category": "Books",
+    "rating": 4.7,
+    "reviews": 80
+  },
+  {
+    "id": 22,
+    "name": "Science Book",
+    "description": "Educational science",
+    "price": 599,
+    "image": "https://via.placeholder.com/150",
+    "category": "Books",
+    "rating": 4.5,
+    "reviews": 50
+  },
+  {
+    "id": 23,
+    "name": "History Book",
+    "description": "World history",
+    "price": 499,
+    "image": "https://via.placeholder.com/150",
+    "category": "Books",
+    "rating": 4.4,
+    "reviews": 45
+  },
+  {
+    "id": 24,
+    "name": "Coding Book",
+    "description": "Learn programming",
+    "price": 799,
+    "image": "https://via.placeholder.com/150",
+    "category": "Books",
+    "rating": 4.8,
+    "reviews": 120
+  },
+  {
+    "id": 25,
+    "name": "Motivation Book",
+    "description": "Self help guide",
+    "price": 299,
+    "image": "https://via.placeholder.com/150",
+    "category": "Books",
+    "rating": 4.6,
+    "reviews": 90
+  },
+  {
+    "id": 26,
+    "name": "Notebook",
+    "description": "Writing notebook",
+    "price": 100,
+    "image": "https://via.placeholder.com/150",
+    "category": "Books",
+    "rating": 4.3,
+    "reviews": 25
+  },
+  {
+    "id": 27,
+    "name": "Dictionary",
+    "description": "English dictionary",
+    "price": 500,
+    "image": "https://via.placeholder.com/150",
+    "category": "Books",
+    "rating": 4.5,
+    "reviews": 40
+  },
+  {
+    "id": 28,
+    "name": "Comics",
+    "description": "Comic book",
+    "price": 200,
+    "image": "https://via.placeholder.com/150",
+    "category": "Books",
+    "rating": 4.6,
+    "reviews": 60
+  },
+  {
+    "id": 29,
+    "name": "Poetry Book",
+    "description": "Poem collection",
+    "price": 350,
+    "image": "https://via.placeholder.com/150",
+    "category": "Books",
+    "rating": 4.4,
+    "reviews": 30
+  },
+  {
+    "id": 30,
+    "name": "Cookbook",
+    "description": "Cooking recipes",
+    "price": 600,
+    "image": "https://via.placeholder.com/150",
+    "category": "Books",
+    "rating": 4.7,
+    "reviews": 55
+  },
+
+  {
+    "id": 31,
+    "name": "Rice",
+    "description": "Premium rice",
+    "price": 1200,
+    "image": "https://via.placeholder.com/150",
+    "category": "Grocery",
+    "rating": 4.3,
+    "reviews": 70
+  },
+  {
+    "id": 32,
+    "name": "Wheat Flour",
+    "description": "Healthy flour",
+    "price": 600,
+    "image": "https://via.placeholder.com/150",
+    "category": "Grocery",
+    "rating": 4.4,
+    "reviews": 65
+  },
+  {
+    "id": 33,
+    "name": "Milk",
+    "description": "Fresh milk",
+    "price": 60,
+    "image": "https://via.placeholder.com/150",
+    "category": "Grocery",
+    "rating": 4.5,
+    "reviews": 80
+  },
+  {
+    "id": 34,
+    "name": "Oil",
+    "description": "Cooking oil",
+    "price": 150,
+    "image": "https://via.placeholder.com/150",
+    "category": "Grocery",
+    "rating": 4.2,
+    "reviews": 40
+  },
+  {
+    "id": 35,
+    "name": "Biscuits",
+    "description": "Snack biscuits",
+    "price": 50,
+    "image": "https://via.placeholder.com/150",
+    "category": "Grocery",
+    "rating": 4.3,
+    "reviews": 55
+  },
+  {
+    "id": 36,
+    "name": "Sugar",
+    "description": "Refined sugar",
+    "price": 50,
+    "image": "https://via.placeholder.com/150",
+    "category": "Grocery",
+    "rating": 4.2,
+    "reviews": 30
+  },
+  {
+    "id": 37,
+    "name": "Salt",
+    "description": "Iodized salt",
+    "price": 20,
+    "image": "https://via.placeholder.com/150",
+    "category": "Grocery",
+    "rating": 4.3,
+    "reviews": 28
+  },
+  {
+    "id": 38,
+    "name": "Tea",
+    "description": "Tea leaves",
+    "price": 250,
+    "image": "https://via.placeholder.com/150",
+    "category": "Grocery",
+    "rating": 4.5,
+    "reviews": 60
+  },
+  {
+    "id": 39,
+    "name": "Coffee",
+    "description": "Instant coffee",
+    "price": 300,
+    "image": "https://via.placeholder.com/150",
+    "category": "Grocery",
+    "rating": 4.6,
+    "reviews": 70
+  },
+  {
+    "id": 40,
+    "name": "Juice",
+    "description": "Fruit juice",
+    "price": 120,
+    "image": "https://via.placeholder.com/150",
+    "category": "Grocery",
+    "rating": 4.4,
+    "reviews": 45
+  },
+
+  {
+    "id": 41,
+    "name": "Face Cream",
+    "description": "Moisturizer",
+    "price": 299,
+    "image": "https://via.placeholder.com/150",
+    "category": "Beauty",
+    "rating": 4.5,
+    "reviews": 70
+  },
+  {
+    "id": 42,
+    "name": "Lipstick",
+    "description": "Long lasting",
+    "price": 499,
+    "image": "https://via.placeholder.com/150",
+    "category": "Beauty",
+    "rating": 4.6,
+    "reviews": 65
+  },
+  {
+    "id": 43,
+    "name": "Shampoo",
+    "description": "Hair care",
+    "price": 250,
+    "image": "https://via.placeholder.com/150",
+    "category": "Beauty",
+    "rating": 4.3,
+    "reviews": 40
+  },
+  {
+    "id": 44,
+    "name": "Perfume",
+    "description": "Luxury fragrance",
+    "price": 999,
+    "image": "https://via.placeholder.com/150",
+    "category": "Beauty",
+    "rating": 4.7,
+    "reviews": 85
+  },
+  {
+    "id": 45,
+    "name": "Face Wash",
+    "description": "Cleanser",
+    "price": 199,
+    "image": "https://via.placeholder.com/150",
+    "category": "Beauty",
+    "rating": 4.4,
+    "reviews": 60
+  },
+  {
+    "id": 46,
+    "name": "Nail Polish",
+    "description": "Gloss finish",
+    "price": 150,
+    "image": "https://via.placeholder.com/150",
+    "category": "Beauty",
+    "rating": 4.3,
+    "reviews": 25
+  },
+  {
+    "id": 47,
+    "name": "Hair Oil",
+    "description": "Herbal oil",
+    "price": 200,
+    "image": "https://via.placeholder.com/150",
+    "category": "Beauty",
+    "rating": 4.4,
+    "reviews": 35
+  },
+  {
+    "id": 48,
+    "name": "Body Lotion",
+    "description": "Hydrating",
+    "price": 300,
+    "image": "https://via.placeholder.com/150",
+    "category": "Beauty",
+    "rating": 4.5,
+    "reviews": 50
+  },
+  {
+    "id": 49,
+    "name": "Makeup Kit",
+    "description": "Full kit",
+    "price": 1500,
+    "image": "https://via.placeholder.com/150",
+    "category": "Beauty",
+    "rating": 4.7,
+    "reviews": 65
+  },
+  {
+    "id": 50,
+    "name": "Sunscreen",
+    "description": "SPF 50",
+    "price": 350,
+    "image": "https://via.placeholder.com/150",
+    "category": "Beauty",
+    "rating": 4.6,
+    "reviews": 55
+  }
+]
