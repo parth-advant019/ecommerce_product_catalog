@@ -64,7 +64,7 @@
     "name": "Tablet",
     "description": "Android tablet",
     "price": 20000,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/electronics/iphone.png",
     "category": "Electronics",
     "rating": 4.3,
     "reviews": 35
@@ -74,7 +74,7 @@
     "name": "Keyboard",
     "description": "Mechanical keyboard",
     "price": 1500,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/electronics/SamsungGalaxyS23.png",
     "category": "Electronics",
     "rating": 4.2,
     "reviews": 30
@@ -84,7 +84,7 @@
     "name": "Mouse",
     "description": "Wireless mouse",
     "price": 700,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/electronics/DellLaptop.png",
     "category": "Electronics",
     "rating": 4.1,
     "reviews": 25
@@ -94,7 +94,7 @@
     "name": "Monitor",
     "description": "24 inch LED monitor",
     "price": 12000,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/electronics/hp_Laptop.png",
     "category": "Electronics",
     "rating": 4.6,
     "reviews": 55

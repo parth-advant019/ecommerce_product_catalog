@@ -2,23 +2,32 @@
 import products from "@/data/products.json";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useState } from "react";
 type ProductProps = {
   category: string;
 };
 
-export default function Product({ category }: ProductProps) {
-  const filteredProducts = products
-    .filter((p) => p.category === category)
-    .slice(0, 3);
+export default function IndividualProduct({ category }: ProductProps) {
+  const [visibleCount, setVisibleCount] = useState(6);
+
+  const filteredProducts = products.filter((p) => p.category === category);
+
+  const visibleProducts = filteredProducts.slice(0, visibleCount);
+
+  const handleShowMore = () => {
+    setVisibleCount((prev) => prev + 4);
+  };
 
   return (
     <div className="p-6">
       <h2 className="text-2xl font-bold mb-6 text-gray-800">{category}</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredProducts.map((product) => (
-          <Link key={product.id} className="text-black" href="/electronics">
+        {visibleProducts.map((product) => (
+          <Link
+            key={product.id}
+            href={`/${product.category.toLowerCase()}/${product.id}`}
+          >
             <div
               key={product.id}
               className="bg-white rounded-2xl shadow-md p-5 hover:shadow-xl transition duration-300 w-full"
@@ -51,18 +60,20 @@ export default function Product({ category }: ProductProps) {
                 </div>
 
                 <span className="text-sm text-gray-600">
-                  {product.reviews} reviews
+                  price {product.price}
                 </span>
               </div>
             </div>
           </Link>
         ))}
       </div>
-      <div className="flex justify-end mt-4">
-        <Link className="text-black" href="/electronics">
-          Show electronic items
-        </Link>
-      </div>
+      {visibleCount < filteredProducts.length && (
+        <div className="flex justify-end mt-4">
+          <button onClick={handleShowMore} className="text-black">
+            Show more
+          </button>
+        </div>
+      )}
     </div>
   );
 }
