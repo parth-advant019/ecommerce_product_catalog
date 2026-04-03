@@ -5,6 +5,8 @@ export default function Home() {
     <div className="w-full">
       <div>
         <Product category="Electronics" />
+        <Product category="Clothing" />
+        <Product category="Books" />
       </div>
     </div>
   );

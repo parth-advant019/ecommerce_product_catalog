@@ -14,11 +14,13 @@ export default function Product({ category }: ProductProps) {
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-6 text-gray-800">{category}</h2>
-
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProducts.map((product) => (
-          <Link key={product.id} className="text-black" href="/electronics">
+          <Link
+            key={product.id}
+            className="text-black"
+            href={`/${product.category.toLowerCase()}/${product.id}`}
+          >
             <div
               key={product.id}
               className="bg-white rounded-2xl shadow-md p-5 hover:shadow-xl transition duration-300 w-full"
@@ -28,7 +30,7 @@ export default function Product({ category }: ProductProps) {
                   src={product.image}
                   alt={product.name}
                   fill
-                  className="object-cover rounded-lg"
+                  className="object-contain p-3"
                 />
               </div>
 
@@ -59,8 +61,8 @@ export default function Product({ category }: ProductProps) {
         ))}
       </div>
       <div className="flex justify-end mt-4">
-        <Link className="text-black" href="/electronics">
-          Show electronic items
+        <Link className="text-black" href={`/${category.toLowerCase()}`}>
+          All {category.toLowerCase()} items
         </Link>
       </div>
     </div>

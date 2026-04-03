@@ -15,7 +15,9 @@ export default function RelatedProducts({ currentId, category }: Props) {
 
   return (
     <div className="mt-12">
-      <h2 className="text-2xl font-semibold mb-6">Related Products</h2>
+      <h2 className="text-2xl text-gray-700 font-semibold mb-6">
+        Related Products
+      </h2>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {relatedProducts.slice(0, 4).map((product) => (
@@ -23,7 +25,7 @@ export default function RelatedProducts({ currentId, category }: Props) {
             key={product.id}
             href={`/${product.category.toLowerCase()}/${product.id}`}
           >
-            <div className="border rounded-lg p-3 hover:shadow-lg transition cursor-pointer">
+            <div className="border border-gray-700 rounded-lg p-3 hover:shadow-lg transition cursor-pointer">
               <div className="relative w-full h-40">
                 <Image
                   src={product.image}
@@ -33,7 +35,7 @@ export default function RelatedProducts({ currentId, category }: Props) {
                 />
               </div>
 
-              <p className="text-sm font-medium mt-2 line-clamp-2">
+              <p className="text-sm text-gray-700 font-medium mt-2 line-clamp-2">
                 {product.name}
               </p>
 

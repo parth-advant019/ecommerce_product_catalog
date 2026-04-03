@@ -1,8 +1,10 @@
+import IndividualProduct from "@/components/products/IndividualProduct";
+
 export default function ClothingPage() {
   return (
     <div className="w-full">
       <div>
-        <p className="text-black">this is ClothingPage</p>
+        <IndividualProduct category="Clothing" />
       </div>
     </div>
   );

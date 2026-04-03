@@ -105,7 +105,7 @@
     "name": "Men T-Shirt",
     "description": "Cotton t-shirt",
     "price": 499,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/clothing/menTshirt.png",
     "category": "Clothing",
     "rating": 4.2,
     "reviews": 30
@@ -115,7 +115,7 @@
     "name": "Women Dress",
     "description": "Summer dress",
     "price": 1299,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/clothing/womenDress.png",
     "category": "Clothing",
     "rating": 4.6,
     "reviews": 55
@@ -125,7 +125,7 @@
     "name": "Jeans",
     "description": "Slim fit jeans",
     "price": 1499,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/clothing/jeans.png",
     "category": "Clothing",
     "rating": 4.3,
     "reviews": 42
@@ -135,7 +135,7 @@
     "name": "Jacket",
     "description": "Winter jacket",
     "price": 2499,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/clothing/jacket.png",
     "category": "Clothing",
     "rating": 4.5,
     "reviews": 60
@@ -145,7 +145,7 @@
     "name": "Sneakers",
     "description": "Running shoes",
     "price": 1999,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/clothing/runningShoes.png",
     "category": "Clothing",
     "rating": 4.4,
     "reviews": 48
@@ -155,7 +155,7 @@
     "name": "Hoodie",
     "description": "Casual hoodie",
     "price": 1299,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/clothing/hoodie.png",
     "category": "Clothing",
     "rating": 4.5,
     "reviews": 45
@@ -165,7 +165,7 @@
     "name": "Cap",
     "description": "Stylish cap",
     "price": 299,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/clothing/menTshirt.png",
     "category": "Clothing",
     "rating": 4.2,
     "reviews": 20
@@ -175,7 +175,7 @@
     "name": "Socks",
     "description": "Cotton socks",
     "price": 199,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/clothing/runningShoes.png",
     "category": "Clothing",
     "rating": 4.1,
     "reviews": 18
@@ -185,7 +185,7 @@
     "name": "Kurta",
     "description": "Traditional wear",
     "price": 999,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/clothing/menTshirt.png",
     "category": "Clothing",
     "rating": 4.6,
     "reviews": 52
@@ -195,7 +195,7 @@
     "name": "Trousers",
     "description": "Formal trousers",
     "price": 899,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/clothing/hoodie.png",
     "category": "Clothing",
     "rating": 4.3,
     "reviews": 35
@@ -206,7 +206,7 @@
     "name": "Novel",
     "description": "Fiction novel",
     "price": 399,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/books/fictionNovel.png",
     "category": "Books",
     "rating": 4.7,
     "reviews": 80
@@ -216,7 +216,7 @@
     "name": "Science Book",
     "description": "Educational science",
     "price": 599,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/books/scienceBook.png",
     "category": "Books",
     "rating": 4.5,
     "reviews": 50
@@ -226,7 +226,7 @@
     "name": "History Book",
     "description": "World history",
     "price": 499,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/books/historyBook.png",
     "category": "Books",
     "rating": 4.4,
     "reviews": 45
@@ -236,7 +236,7 @@
     "name": "Coding Book",
     "description": "Learn programming",
     "price": 799,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/books/codingBook.png",
     "category": "Books",
     "rating": 4.8,
     "reviews": 120
@@ -246,7 +246,7 @@
     "name": "Motivation Book",
     "description": "Self help guide",
     "price": 299,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/books/motivationBook.png",
     "category": "Books",
     "rating": 4.6,
     "reviews": 90
@@ -256,7 +256,7 @@
     "name": "Notebook",
     "description": "Writing notebook",
     "price": 100,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/books/notebook.png",
     "category": "Books",
     "rating": 4.3,
     "reviews": 25
@@ -266,7 +266,7 @@
     "name": "Dictionary",
     "description": "English dictionary",
     "price": 500,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/books/fictionNovel.png",
     "category": "Books",
     "rating": 4.5,
     "reviews": 40
@@ -276,7 +276,7 @@
     "name": "Comics",
     "description": "Comic book",
     "price": 200,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/books/scienceBook.png",
     "category": "Books",
     "rating": 4.6,
     "reviews": 60
@@ -286,7 +286,7 @@
     "name": "Poetry Book",
     "description": "Poem collection",
     "price": 350,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/books/historyBook.png",
     "category": "Books",
     "rating": 4.4,
     "reviews": 30
@@ -296,7 +296,7 @@
     "name": "Cookbook",
     "description": "Cooking recipes",
     "price": 600,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/books/codingBook.png",
     "category": "Books",
     "rating": 4.7,
     "reviews": 55

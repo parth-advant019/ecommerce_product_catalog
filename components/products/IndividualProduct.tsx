@@ -20,7 +20,9 @@ export default function IndividualProduct({ category }: ProductProps) {
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-6 text-gray-800">{category}</h2>
+      <h2 className="text-2xl font-bold mb-6 text-gray-800">
+        {category} Products
+      </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {visibleProducts.map((product) => (
@@ -37,7 +39,7 @@ export default function IndividualProduct({ category }: ProductProps) {
                   src={product.image}
                   alt={product.name}
                   fill
-                  className="object-cover rounded-lg"
+                  className="object-contain p-3"
                 />
               </div>
 
