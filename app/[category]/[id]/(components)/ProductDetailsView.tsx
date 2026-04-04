@@ -1,3 +1,6 @@
+"use client";
+import { useContext } from "react";
+import CartContext from "@/context/CartContext";
 import ImageZoomModal from "@/components/products/ImageZoomModal";
 
 type Product = {
@@ -15,11 +18,14 @@ type Props = {
   product: Product;
 };
 export default function ProductDetailsView({ product }: Props) {
+  const cartCtx = useContext(CartContext)!;
   return (
     <div className="p-6 max-w-5xl mx-auto">
       <ImageZoomModal src={product.image} alt={product.name} />
 
-      <h1 className="text-3xl text-gray-700 font-bold mb-3">{product.name}</h1>
+      <h1 className="text-3xl text-gray-700 font-bold mb-3 mt-2">
+        {product.name}
+      </h1>
 
       <p className="text-lg text-gray-700 mb-2">Price: {product.price}</p>
 
@@ -38,6 +44,19 @@ export default function ProductDetailsView({ product }: Props) {
       <p className="text-gray-600 mb-4">{product.reviews} reviews</p>
 
       <p className="text-gray-700">{product.description}</p>
+
+      <button
+        onClick={() =>
+          cartCtx.addItem({
+            id: product.id,
+            name: product.name,
+            price: product.price,
+          })
+        }
+        className="mt-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+      >
+        Add to Cart
+      </button>
     </div>
   );
 }

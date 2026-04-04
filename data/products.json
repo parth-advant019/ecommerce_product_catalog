@@ -307,7 +307,7 @@
     "name": "Rice",
     "description": "Premium rice",
     "price": 1200,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/grocery/rice.png",
     "category": "Grocery",
     "rating": 4.3,
     "reviews": 70
@@ -317,7 +317,7 @@
     "name": "Wheat Flour",
     "description": "Healthy flour",
     "price": 600,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/grocery/wheatFlour.png",
     "category": "Grocery",
     "rating": 4.4,
     "reviews": 65
@@ -327,7 +327,7 @@
     "name": "Milk",
     "description": "Fresh milk",
     "price": 60,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/grocery/milk.png",
     "category": "Grocery",
     "rating": 4.5,
     "reviews": 80
@@ -337,7 +337,7 @@
     "name": "Oil",
     "description": "Cooking oil",
     "price": 150,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/grocery/cookingOil.png",
     "category": "Grocery",
     "rating": 4.2,
     "reviews": 40
@@ -347,7 +347,7 @@
     "name": "Biscuits",
     "description": "Snack biscuits",
     "price": 50,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/grocery/biscuits.png",
     "category": "Grocery",
     "rating": 4.3,
     "reviews": 55
@@ -357,7 +357,7 @@
     "name": "Sugar",
     "description": "Refined sugar",
     "price": 50,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/grocery/sugar.png",
     "category": "Grocery",
     "rating": 4.2,
     "reviews": 30
@@ -367,7 +367,7 @@
     "name": "Salt",
     "description": "Iodized salt",
     "price": 20,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/grocery/rice.png",
     "category": "Grocery",
     "rating": 4.3,
     "reviews": 28
@@ -377,7 +377,7 @@
     "name": "Tea",
     "description": "Tea leaves",
     "price": 250,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/grocery/wheatFlour.png",
     "category": "Grocery",
     "rating": 4.5,
     "reviews": 60
@@ -387,7 +387,7 @@
     "name": "Coffee",
     "description": "Instant coffee",
     "price": 300,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/grocery/biscuits.png",
     "category": "Grocery",
     "rating": 4.6,
     "reviews": 70
@@ -397,7 +397,7 @@
     "name": "Juice",
     "description": "Fruit juice",
     "price": 120,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/grocery/cookingOil.png",
     "category": "Grocery",
     "rating": 4.4,
     "reviews": 45
@@ -408,7 +408,7 @@
     "name": "Face Cream",
     "description": "Moisturizer",
     "price": 299,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/beauty/faceCream.png",
     "category": "Beauty",
     "rating": 4.5,
     "reviews": 70
@@ -418,7 +418,7 @@
     "name": "Lipstick",
     "description": "Long lasting",
     "price": 499,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/beauty/lipstick.png",
     "category": "Beauty",
     "rating": 4.6,
     "reviews": 65
@@ -428,7 +428,7 @@
     "name": "Shampoo",
     "description": "Hair care",
     "price": 250,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/beauty/shampoo.png",
     "category": "Beauty",
     "rating": 4.3,
     "reviews": 40
@@ -438,7 +438,7 @@
     "name": "Perfume",
     "description": "Luxury fragrance",
     "price": 999,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/beauty/perfume.png",
     "category": "Beauty",
     "rating": 4.7,
     "reviews": 85
@@ -448,7 +448,7 @@
     "name": "Face Wash",
     "description": "Cleanser",
     "price": 199,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/beauty/faceWash.png",
     "category": "Beauty",
     "rating": 4.4,
     "reviews": 60
@@ -458,7 +458,7 @@
     "name": "Nail Polish",
     "description": "Gloss finish",
     "price": 150,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/beauty/nailPolish.png",
     "category": "Beauty",
     "rating": 4.3,
     "reviews": 25
@@ -468,7 +468,7 @@
     "name": "Hair Oil",
     "description": "Herbal oil",
     "price": 200,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/beauty/faceCream.png",
     "category": "Beauty",
     "rating": 4.4,
     "reviews": 35
@@ -478,7 +478,7 @@
     "name": "Body Lotion",
     "description": "Hydrating",
     "price": 300,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/beauty/shampoo.png",
     "category": "Beauty",
     "rating": 4.5,
     "reviews": 50
@@ -488,7 +488,7 @@
     "name": "Makeup Kit",
     "description": "Full kit",
     "price": 1500,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/beauty/lipstick.png",
     "category": "Beauty",
     "rating": 4.7,
     "reviews": 65
@@ -498,7 +498,7 @@
     "name": "Sunscreen",
     "description": "SPF 50",
     "price": 350,
-    "image": "https://via.placeholder.com/150",
+    "image": "/images/beauty/faceWash.png",
     "category": "Beauty",
     "rating": 4.6,
     "reviews": 55

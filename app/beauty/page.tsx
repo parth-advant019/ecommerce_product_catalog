@@ -1,8 +1,9 @@
+import IndividualProduct from "@/components/products/IndividualProduct";
 export default function BeautyPage() {
   return (
     <div className="w-full">
       <div>
-        <p className="text-black">this is BeautyPage</p>
+        <IndividualProduct category="Beauty" />
       </div>
     </div>
   );

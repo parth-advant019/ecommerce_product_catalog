@@ -7,6 +7,8 @@ export default function Home() {
         <Product category="Electronics" />
         <Product category="Clothing" />
         <Product category="Books" />
+        <Product category="Grocery" />
+        <Product category="Beauty" />
       </div>
     </div>
   );

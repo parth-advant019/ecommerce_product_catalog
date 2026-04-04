@@ -1,9 +1,19 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import CartContext from "@/context/CartContext";
+import UserProgressContext from "@/context/UserProgressContext";
 
 export default function SideBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const cartCtx = useContext(CartContext)!;
+  const progressCtx = useContext(UserProgressContext)!;
+
+  const totalCount = cartCtx.items.reduce(
+    (acc, item) => acc + item.quantity,
+    0,
+  );
 
   return (
     <>
@@ -92,8 +102,11 @@ export default function SideBar() {
               </Link>
             </li>
           </ul>
-          <button className="w-full py-2 bg-white/20 hover:bg-white/30 rounded-lg text-sm">
-            cart
+          <button
+            onClick={progressCtx.showCart}
+            className="w-full py-2 bg-white/20 hover:bg-white/30 rounded-lg text-sm"
+          >
+            cart({totalCount})
           </button>
         </nav>
       </div>
