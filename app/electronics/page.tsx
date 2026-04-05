@@ -1,5 +1,6 @@
 import IndividualProduct from "@/components/products/IndividualProduct";
-export default function ElectronicsPage() {
+export default async function ElectronicsPage() {
+  // await new Promise((resolve) => setTimeout(resolve, 5000));
   return (
     <div className="w-full">
       <div>

@@ -31,7 +31,7 @@ export default function SideBar() {
           </svg>
         )}
       </button>
-      {/*close from outside */}
+
       {mobileOpen && (
         <div
           className="md:hidden fixed inset-0 bg-black/40 z-30"

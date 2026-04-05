@@ -49,10 +49,10 @@ export default function OrderSuccess() {
 
       <div className="flex justify-center mt-4">
         <Link
-          className="text-white bg-blue-500 px-2 py-2 rounded-lg mt-2 text"
+          className="text-white bg-blue-500 px-2 py-2 rounded-lg mt-2"
           href="/"
         >
-          Home
+          Go Home
         </Link>
       </div>
     </div>
