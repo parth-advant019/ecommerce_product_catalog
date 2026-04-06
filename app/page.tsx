@@ -1,14 +1,10 @@
-import Product from "@/components/products/Product";
-
+import ProductFilter from "@/components/products/ProductFilter";
 export default function Home() {
   return (
     <div className="w-full">
+      <h1 className="text-gray-700 text-xl mb-4">Welcome to e-commerce </h1>
       <div>
-        <Product category="Electronics" />
-        <Product category="Clothing" />
-        <Product category="Books" />
-        <Product category="Grocery" />
-        <Product category="Beauty" />
+        <ProductFilter />
       </div>
     </div>
   );

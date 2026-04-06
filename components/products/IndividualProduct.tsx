@@ -8,14 +8,47 @@ type ProductProps = {
 };
 
 export default function IndividualProduct({ category }: ProductProps) {
+  const [search, setSearch] = useState("");
+  const [minPrice, setMinPrice] = useState("");
+  const [maxPrice, setMaxPrice] = useState("");
+  const [sortOrder, setSortOrder] = useState("");
+  const [error, setError] = useState("");
+
   const [visibleCount, setVisibleCount] = useState(6);
 
   const filteredProducts = products.filter((p) => p.category === category);
 
-  const visibleProducts = filteredProducts.slice(0, visibleCount);
+  const searchedProducts = filteredProducts.filter((item) => {
+    if (error) return false;
+    const matchSearch = item.name.toLowerCase().includes(search.toLowerCase());
+
+    const matchMin = minPrice === "" || item.price >= Number(minPrice);
+
+    const matchMax = maxPrice === "" || item.price <= Number(maxPrice);
+
+    return matchSearch && matchMin && matchMax;
+  });
+
+  const sortedProducts = [...searchedProducts].sort((a, b) => {
+    if (sortOrder === "high") {
+      return b.rating - a.rating;
+    }
+    if (sortOrder === "low") {
+      return a.rating - b.rating;
+    }
+    return 0;
+  });
+
+  const visibleProducts = sortedProducts.slice(0, visibleCount);
 
   const handleShowMore = () => {
     setVisibleCount((prev) => prev + 4);
+  };
+
+  const handleClearPrice = () => {
+    setMinPrice("");
+    setMaxPrice("");
+    setError("");
   };
 
   return (
@@ -23,6 +56,129 @@ export default function IndividualProduct({ category }: ProductProps) {
       <h2 className="text-2xl font-bold mb-6 text-gray-800">
         {category} Products
       </h2>
+
+      {/* <div className="flex flex-col sm:flex-row md:flex-wrap gap-4 mb-4">
+        <input
+          type="text"
+          placeholder="Search item..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="h-10 px-3 w-full md:w-full lg:w-auto lg:flex-1 rounded-md border border-gray-300 bg-white text-gray-800 placeholder-gray-400 mb-4"
+        />
+
+        <input
+          type="number"
+          placeholder="Min price"
+          value={minPrice}
+          onChange={(e) => {
+            const value = e.target.value;
+            setMinPrice(value);
+
+            if (maxPrice && Number(value) > Number(maxPrice)) {
+              setError("Min price cannot be greater than Max price");
+            } else {
+              setError("");
+            }
+          }}
+          className="h-10 px-3 w-full sm:w-32 border border-gray-700 bg-white placeholder-gray-400 text-gray-800 rounded"
+        />
+
+        <input
+          type="number"
+          placeholder="Max price"
+          value={maxPrice}
+          onChange={(e) => {
+            const value = e.target.value;
+            setMaxPrice(value);
+            if (minPrice && Number(value) < Number(minPrice)) {
+              setError("Max price cannot be less than Min price");
+            } else {
+              setError("");
+            }
+          }}
+          className="h-10 px-3 w-full sm:w-32 border border-gray-700 bg-white placeholder-gray-400 text-gray-800 rounded"
+        />
+        <button
+          onClick={handleClearPrice}
+          className="h-10 w-full sm:w-auto text-white bg-blue-500 px-3 rounded-lg"
+        >
+          Clear Price
+        </button>
+
+        <select
+          value={sortOrder}
+          onChange={(e) => setSortOrder(e.target.value)}
+          className="h-10 w-full sm:w-40 border border-gray-700 p-2 rounded-lg text-gray-700"
+        >
+          <option value="">Sort by</option>
+          <option value="high">High to Low</option>
+          <option value="low">Low to High</option>
+        </select>
+      </div> */}
+
+      <div className="flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap gap-4 mb-4">
+        <input
+          type="text"
+          placeholder="Search item..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="h-10 px-3 w-full lg:w-80 border border-gray-300 bg-white text-gray-800 placeholder-gray-400 rounded-md"
+        />
+
+        <input
+          type="number"
+          placeholder="Min price"
+          value={minPrice}
+          onChange={(e) => {
+            const value = e.target.value;
+            setMinPrice(value);
+
+            if (maxPrice && Number(value) > Number(maxPrice)) {
+              setError("Min price cannot be greater than Max price");
+            } else {
+              setError("");
+            }
+          }}
+          className="h-10 px-3 w-full sm:w-[30%] lg:w-32 border border-gray-700 bg-white placeholder-gray-400 text-gray-800 rounded"
+        />
+
+        {/* 🔹 Max */}
+        <input
+          type="number"
+          placeholder="Max price"
+          value={maxPrice}
+          onChange={(e) => {
+            const value = e.target.value;
+            setMaxPrice(value);
+
+            if (minPrice && Number(value) < Number(minPrice)) {
+              setError("Max price cannot be less than Min price");
+            } else {
+              setError("");
+            }
+          }}
+          className="h-10 px-3 w-full sm:w-[30%] lg:w-32 border border-gray-700 bg-white placeholder-gray-400 text-gray-800 rounded"
+        />
+
+        <button
+          onClick={handleClearPrice}
+          className="h-10 w-full sm:w-[30%] lg:w-auto text-white bg-blue-500 px-3 rounded-lg"
+        >
+          Clear Price
+        </button>
+
+        <select
+          value={sortOrder}
+          onChange={(e) => setSortOrder(e.target.value)}
+          className="h-10 w-full sm:w-full lg:w-40 border border-gray-700 rounded-lg text-gray-700"
+        >
+          <option value="">Sort by</option>
+          <option value="high">High to Low</option>
+          <option value="low">Low to High</option>
+        </select>
+      </div>
+
+      {error && <p className="text-red-500">{error}</p>}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {visibleProducts.map((product) => (
@@ -69,7 +225,7 @@ export default function IndividualProduct({ category }: ProductProps) {
           </Link>
         ))}
       </div>
-      {visibleCount < filteredProducts.length && (
+      {visibleCount < searchedProducts.length && (
         <div className="flex justify-end mt-4">
           <button onClick={handleShowMore} className="text-black">
             Show more

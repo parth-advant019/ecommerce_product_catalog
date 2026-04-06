@@ -1,11 +1,16 @@
 "use client";
 import Link from "next/link";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import CartContext from "@/context/CartContext";
 import UserProgressContext from "@/context/UserProgressContext";
 
 export default function SideBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const cartCtx = useContext(CartContext)!;
   const progressCtx = useContext(UserProgressContext)!;
@@ -106,7 +111,7 @@ export default function SideBar() {
             onClick={progressCtx.showCart}
             className="w-full py-2 bg-white/20 hover:bg-white/30 rounded-lg text-sm"
           >
-            cart({totalCount})
+            cart({mounted ? totalCount : 0})
           </button>
         </nav>
       </div>
